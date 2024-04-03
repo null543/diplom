@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окно игры</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="/Game/styles.css">
+</head>
+<body >
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    <script src="/menu.js"></script>
+    <script type="module" src="/Game/gamelist.js"></script>
+    <header>
+        <!-- Меню -->
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <!-- Заголовок игры и описание -->
+        <div class="mb-6">
+            <h1 id="game-title" class="text-3xl font-bold mb-4"></h1>
+            <p id="game-description"></p>
+        </div>
+
+        <!-- Кнопка продать -->
+        <div class="flex justify-end mb-6">
+            <button id="sell-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Продать
+            </button>
+        </div>
+       
+        <!-- Таблица лотов -->
+        <table class="table-auto w-full mb-6">
+            <thead>
+                <tr>
+                    <th class="px-3 py-2">Описание</th>
+                    <th class="px-4 py-2">Продавец</th>
+                    <th class="px-4 py-2">Цена</th>
+                </tr>
+            </thead>
+            <tbody id="listings-container">
+                <!-- Список лотов будет загружен здесь -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <!-- Футер сайта -->
+    </footer>
+
+</body>
+</html>

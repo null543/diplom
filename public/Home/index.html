@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Exchange Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted.cdn.com; object-src 'none';">
+
+
+    
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.4/dist/purify.min.js"></script>
+<script src="/Home/dom.js"></script>
+
+<body >
+    <script>
+        function typeWriter(element, delay = 100) {
+  const textArray = element.innerHTML.split('');
+  element.innerHTML = '';
+  textArray.forEach((char, index) => {
+    setTimeout(() => {
+      element.innerHTML += char;
+    }, delay * index);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.getElementById('consoleEffect');
+  const elements = container.children; // Получаем дочерние элементы
+  let delay = 0;
+
+  for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    const delayIncrement = element.innerText.length * 100; // Вычисляем задержку на основе длины текста
+
+    setTimeout(() => {
+      element.style.visibility = 'visible'; // Делаем элемент видимым
+      typeWriter(element, 50); // Применяем функцию печати текста
+    }, delay);
+
+    delay += delayIncrement; // Увеличиваем общую задержку
+  }
+});
+
+    </script>
+<script src="/menu.js"></script>
+
+  
+</header>
+    <main>
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                <div class="text-center lg:w-2/3 w-full">
+                    <div id="consoleEffect">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium hover:text-white text-white">Добро пожаловать на игровую биржу GameExchange</h1>
+                        
+                      </div>
+                      <p class="mb-8 leading-relaxed hover:text-white text-white">Идеальная платформа для покупки и продажи игровых ценностей. Открывайте редкие предметы, торгуйте с другими игроками и находите эксклюзивные предложения.</p>
+                      
+                    <div class="flex justify-center">
+                        <a href="/Listing/index.html" class="box__link button-animation">Приступить к покупкам</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Game Exchange Marketplace</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Общие стили страницы */
+body {
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Стилизация заголовка формы */
+h1 {
+  
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Стилизация формы */
+form {
+    background: #1f2833;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
+    margin-top: 2rem;
+}
+
+/* Стилизация полей ввода и текстовых областей */
+input[type="text"],
+input[type="number"],
+textarea {
+    background-color: #0b0c10;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #c5c6c7;
+}
+
+/* Стилизация чекбокса */
+input[type="checkbox"] {
+    accent-color: #66fcf1;
+}
+
+/* Стилизация кнопки */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    color: #0b0c10;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #66fcf1;
+}
+
+/* Отступы для элементов формы */
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* Стилизация заголовков полей */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Дополнительные стили для улучшения адаптивности и внешнего вида */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}

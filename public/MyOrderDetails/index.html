@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детальный просмотр заказа</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/MyOrderDetails/styles.css">
+
+</head>
+<body>
+    <script type="module" src="/MyOrderDetails/orderdetails.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    <script src="/menu.js"></script>
+<div class="order-details-container">
+    <div class="order-header">
+        <h1 id="order-number">Заказ #T85SCLYH</h1>
+        <h2 id="order-status">Закрыт</h2>
+    </div>
+    <div class="paid-item">
+        <h3>Оплаченный товар</h3>
+        <p id="item-info"></p>
+        <button class="copy-button">Копировать</button>
+    </div>
+
+    <div class="game-name" id="game-name">
+        <h3>Игра</h3>
+        <p>Игра: </p>
+    </div>
+
+    <div class="short-description" id="short-description">
+        <h3>Краткое описание</h3>
+        <p></p>
+    </div>
+
+    <div class="detailed-description" id="detailed-description">
+        <h3>Подробное описание</h3>
+        <p></p>
+    </div>
+
+    <hr>
+
+    <div class="creation-info">
+        <p class="created-date" id="created-date">Создан: </p>
+        <p class="amount" id="amount">Сумма: </p>
+    </div>
+
+    <div class="confirm-button" id="confirm-button">
+        <button class="publish-button">Подтвердить выполнение заказа</button>
+    </div>
+
+    <hr>
+
+    <div class="seller-review">
+        <h3>Отзыв для продавца</h3>
+        <textarea placeholder="Ваш отзыв"></textarea>
+        <div class="rating">
+            <!-- Используйте библиотеку для звездного рейтинга или свой метод -->
+        </div>
+        <button class="publish-button">Опубликовать</button>
+    </div>
+</div>
+
+<script src="detail-view.js"></script>
+</body>
+</html>

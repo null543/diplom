@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/Profile/styles.css" rel="stylesheet">
+</head>
+<body class=" text-white">
+    <script src="/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script type="module" src="/Profile/profile.js"></script>
+    
+    <div class="container mx-auto my-12 p-8">
+        <div class="user-profile flex items-center">
+            <button id="edit-avatar-button" class="edit-avatar-button" type="button">
+                <img src="/Icons/pen.png" alt="" width="32" height="32">
+              </button>   
+            <!-- Секция с аватаром и информацией пользователя -->
+            <div class="avatar mr-8 relative">
+               
+                <img id="user-avatar" src="" alt="Аватар пользователя" class="rounded-full h-32 w-32 object-cover">
+                <!-- Кнопка редактирования, изначально скрытая -->
+                
+            </div>
+            
+            <div class="user-info">
+                <h1 id="user-nickname" class="text-4xl font-bold"></h1>
+                <p id="user-email" class="text-lg mt-1"></p>
+                <p id="user-registration-date" class="text-lg mt-1">Дата регистрации: </p>
+                <div id="user-rating" class="user-rating flex items-center mt-2">
+                    <!-- Место для рейтинга пользователя -->
+                    <span class="rating-star mr-2">★</span>
+                    <span class="text-lg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="listings-container" class="card-container">
+        
+      </div>
+      
+    <footer class="footer">
+       
+    </footer>
+    
+</body>
+
+</html>

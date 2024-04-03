@@ -1,0 +1,21 @@
+body{
+    background-color: #0b0c10;
+}
+/* Стили для заголовков */
+h1, h2 {
+    color: #fff;
+}
+
+/* Стили для описаний */
+p {
+    color: #ccc;
+}
+
+/* Стили для кнопок */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}

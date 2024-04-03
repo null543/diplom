@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Exchange Listings</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" >
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body >
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    <script src="/menu.js"></script>
+    
+    <script type="module" src="/Listing/listing.js"></script>
+    <div class="container px-5 py-15 mx-auto">
+        <!-- Поле поиска -->
+        <div class="mb-5">
+            <input type="text" id="search-input" placeholder="Поиск по играм..." class="bg-gray-900 h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+        </div>
+        
+        
+    </div>
+    
+    <header class="hover:text-white text-white body-font">
+        <!-- Navigation Bar Here -->
+    </header>
+    <main>
+        <section class="hover:text-white text-white body-font">
+            <div class="container px-5 py-24 mx-auto">
+                
+                <div class="flex flex-wrap -m-4" id="listings-container">
+                    <!-- Listings will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="hover:text-white text-white body-font">
+        <!-- Footer Here -->
+    </footer>
+</body>
+</html>
+
+

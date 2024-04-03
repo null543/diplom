@@ -1,0 +1,128 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #0b0c10; /* Пиратский черный цвет фона */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    /* Дополнительные стили для секции пользователя */
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 150px; /* Размер аватара */
+    height: 150px;
+}
+
+.user-info h1 {
+    margin-bottom: 0.5rem;
+}
+
+.user-rating {
+    display: flex;
+    align-items: center;
+}
+
+.user-rating .rating-star {
+    color: gold;
+    margin-right: 5px;
+}
+
+
+.card-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #1A1A1D;
+    color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .card-header {
+    background-color: #212125;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2b2b2e;
+  }
+  
+  .card-header h3 {
+    margin: 0;
+  }
+  
+  .edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  /* If you have a specific class for the edit button icon, it would be something like this: */
+  #edit-avatar-button {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    padding: 0; /* Убираем отступы вокруг содержимого */
+    position: unset; /* Позиционируем кнопку абсолютно */
+    top: 10px; /* Располагаем кнопку 10px сверху */
+    right: 10px;
+  }
+  
+  #edit-avatar-button img {
+    width: 32px; /* Ширина изображения */
+    height: 32px; /* Высота изображения */
+  }
+  /* Дополнительные стили для эффекта при наведении */
+  
+  #edit-avatar-button:hover {
+    filter: brightness(50%); /* Уменьшаем яркость при наведении */
+  }
+  
+  .lots-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .lots-table thead {
+    background-color: #212125;
+  }
+  
+  .lots-table th,
+  .lots-table td {
+    text-align: left;
+    padding: 0.8rem 1.2rem;
+  }
+  .lots-table td {
+    color: #dcdcdc;
+    width: 1mm; /* Установка минимальной ширины */
+}
+  
+  .lots-table th {
+    color: #9c9c9d;
+  }
+  
+  .lots-table tbody tr {
+    border-bottom: 1px solid #2b2b2e;
+  }
+  
+  .lots-table tbody tr:last-child {
+    border-bottom: none;
+    
+    
+  }
+  
+  .lots-table td {
+    color: #dcdcdc;
+  }
+  
+  .lots-table td:last-child {
+    text-align: right;
+  }
+  
+  

@@ -1,0 +1,89 @@
+/* Стили для карточек */
+.listing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавное изменение размера и тени */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Начальная тень */
+}
+
+.listing-card:hover {
+  transform: scale(1.05); /* Увеличение размера карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличение тени для создания эффекта глубины */
+  border: 2px solid #a7b4c2; /* Добавление синего контура вокруг карточки */
+  
+}
+
+/* Стили для поля поиска */
+#search-input {
+  border: 2px solid #dddddd; /* Граница поля ввода */
+  transition: all 0.3s ease-in-out; /* Плавный переход для всех свойств */
+  position: relative; /* Для позиционирования иконки поиска */
+}
+
+#search-input:focus {
+  border-color: #007bff; /* Изменение цвета границы при фокусе */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Тень вокруг поля при фокусе */
+  background-color: #f8f9fa; /* Светлый фон при фокусе */
+}
+
+
+
+/* Добавление иконки поиска справа внутри поля ввода */
+#search-input::-webkit-search-decoration,
+#search-input::-webkit-search-cancel-button,
+#search-input::-webkit-search-results-button,
+#search-input::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Дополнительные стили для адаптивности и красоты */
+#search-input {
+  width: 100%; /* Полная ширина в контейнере */
+  max-width: 500px; /* Максимальная ширина, чтобы поле не было слишком широким на больших экранах */
+  margin: 20px auto; /* Центрирование поля поиска */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#game-info {
+  margin: 20px;
+}
+
+#game-description {
+  margin-bottom: 20px;
+}
+
+#game-offers table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#game-offers th, #game-offers td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#game-offers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#game-offers th {
+  background-color: #333;
+  color: white;
+}
+
+#game-offers h2 {
+  color: #333;
+}
+
+
+body {
+  background-color: #0b0c10; /* Пиратский черный цвет фона */
+}
+
+.search{
+  background-color: #0b0c10; 
+}
