@@ -11,23 +11,7 @@ const fileTransport = new winston.transports.DailyRotateFile({
   maxFiles: '14d'
 });
 
-const mailTransport = new winston.transports.Mail({
-    to: 'resident.evil.remake@mail.ru',
-    from: 'theatre.send.code@mail.ru',
-    subject: 'Error Logs',
-    host: 'smtp.mail.ru',
-    port: 465, // Изменен с 465 на 587 для использования STARTTLS
-    secure: true, // Изменен на false, поскольку для порта 587 обычно используется STARTTLS
-    tls: {
-        rejectUnauthorized: false // Добавлен параметр для локального хоста
-      },
-    auth: {
-      user: 'theatre.send.code@mail.ru',
-      pass: 'zsKRAUsEYqHRG1AxGiuP'
-    },
-    level: 'error'
-  });
-  
+
 // Создание экземпляра логгера
 const logger = winston.createLogger({
   level: 'info', // Минимальный уровень логирования
@@ -41,7 +25,6 @@ const logger = winston.createLogger({
   ),
   transports: [
     fileTransport,
-    mailTransport
   ]
 });
 

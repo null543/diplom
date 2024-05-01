@@ -1,0 +1,76 @@
+/* Основные стили страницы */
+body {
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилизация контейнера */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Стилизация заголовка */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Стилизация фильтров */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.filters input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #1f2833;
+    background-color: #1f2833;
+    color: #ffffff;
+}
+
+/* Стилизация таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #4b5c5e;
+}
+
+table th {
+    background-color: #1f2833;
+    color: #ffffff;
+}
+
+table tbody tr:hover {
+    background-color: #1f2833;
+    cursor: pointer;
+}
+
+
+
+
+/* Медиа запросы для адаптивности */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filters input[type="text"] {
+        width: 100%;
+    }
+}

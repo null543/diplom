@@ -9,9 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (token) {
         menuItems = `
+        
+            <a href="/Messages/" class="mr-5 hover:text-white">Сообщения</a>
             <a href="/Listing/index.html" class="mr-5 hover:text-white">Обьявления</a>
             <a href="/orders/" class="mr-5 hover:text-white">Покупки</a>
-            <a href="dashboard.html" class="mr-5 hover:text-white">Панель управления продавцом</a>
+            <a href="/sales/" class="mr-5 hover:text-white">Панель управления продавцом</a>
             <a href="/Profile/${userId}" class="mr-5 hover:text-white">Профиль</a>
         `;
     } else {

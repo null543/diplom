@@ -11,9 +11,6 @@
     <script src="/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
     <script type="module" src="/ListingFull/listingfull.js"></script>
-    <header>
-        <!-- Меню -->
-    </header>
 
     <main class="container mx-auto px-4 py-6">
         <h1 class="text-3xl font-bold mb-4">Оформление заказа</h1>
@@ -33,6 +30,18 @@
         <button id="sell-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">
             Купить
         </button>
+        <!-- Новый раздел для отправки сообщения -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold">Отправить сообщение</h2>
+            <div class="flex items-center">
+                <input type="text" id="message-input" class="bg-gray-800 text-white rounded py-2 px-4 mr-2 flex-grow"
+                placeholder="Ваше сообщение" />
+                <button id="send-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    Отправить
+                </button>
+            </div>
+        </div>
+    </main>
     </main>
 
     <footer>

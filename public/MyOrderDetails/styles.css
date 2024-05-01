@@ -93,4 +93,75 @@ hr {
     font-weight: bold;
 }
 
-/* Подключите нужные классы и id, если планируете использовать JS для взаимодействия с элементами */
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    font-size: 40px;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: orange;
+}
+
+.review-card {
+    max-width: 600px; /* Максимальная ширина карточки */
+    margin: 20px auto; /* Отступы сверху и снизу, авто по бокам для центрирования */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Тень карточки */
+    border-radius: 8px; /* Скругление углов */
+    background: #0b0c10;
+  }
+  
+  .review-header {
+    display: flex; /* Сделать контейнер флексом */
+    align-items: center; /* Центрировать содержимое по вертикали */
+    margin-bottom: 15px; /* Отступ снизу */
+  }
+  
+  .review-info {
+    flex-grow: 1; /* Пусть review-info занимает все доступное пространство */
+  }
+  
+  .review-author {
+    font-size: 1.2em; /* Увеличить размер шрифта для автора */
+    font-weight: bold; /* Сделать текст жирным */
+  }
+  
+  .review-date {
+    color: #666; /* Серый цвет текста для даты */
+  }
+  
+  .review-content {
+    margin-bottom: 15px; /* Отступ снизу */
+  }
+  
+  .review-rating {
+    color: orange; /* Цвет звездочек */
+    font-size: 1.5em; /* Увеличить размер шрифта для звезд */
+    margin-bottom: 15px; /* Отступ снизу */
+  }
+  
+  .review-actions button {
+    background: blue; /* Синий фон для кнопок */
+    color: white; /* Белый цвет текста для кнопок */
+    border: none; /* Убрать границу */
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    border-radius: 5px; /* Скругление углов кнопки */
+    margin-right: 10px; /* Отступ справа */
+    cursor: pointer; /* Курсор в виде указателя */
+  }
+  
+  .review-actions button.delete-button {
+    background: red; /* Красный фон для кнопки "Удалить" */
+  }
+  
+  .review-actions button:hover {
+    opacity: 0.8; /* Немного прозрачности при наведении */
+  }
+  

@@ -93,6 +93,5 @@ document.addEventListener('click', function(e) {
     if (e.target.closest('.listing-card')) {
         const gameId = e.target.closest('.listing-card').getAttribute('data-game-id');
         console.log('Идентификатор игры:', gameId);
-        // Здесь вы можете использовать gameId для выполнения API-запроса и т.д.
     }
 });

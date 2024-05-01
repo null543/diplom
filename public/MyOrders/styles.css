@@ -43,8 +43,7 @@ table {
     margin-bottom: 2rem;
 }
 
-table th,
-table td {
+table th, table td {
     padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid #4b5c5e;
@@ -60,10 +59,13 @@ table tbody tr:hover {
     cursor: pointer;
 }
 
-
-
-
 /* Медиа запросы для адаптивности */
+@media (max-width: 992px) {
+    .container {
+        padding: 0.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .filters {
         flex-direction: column;
@@ -72,5 +74,23 @@ table tbody tr:hover {
 
     .filters input[type="text"] {
         width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; /* Дальнейшее уменьшение размера заголовка для очень маленьких экранов */
+    }
+
+    .container {
+        padding: 0.25rem;
+    }
+
+    table, table th, table td {
+        padding: 0.5rem; /* Уменьшение отступов в таблице для лучшего использования пространства */
     }
 }

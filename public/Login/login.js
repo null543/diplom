@@ -23,16 +23,18 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         return response.json();
     })
     .then(data => {
-        const userid = getUserIDFromToken();
         console.log('Success:', data);
         // Сохранение токена в cookie
         console.log('Токен получен:', data.token);
-        document.cookie = `token=${data.Token};path=/;max-age=86400`; // 86400 секунд = 1 день
+        document.cookie = `token=${data.token};path=/;max-age=86400`; // 86400 секунд = 1 день
         localStorage.setItem('token', data.token); // Используем localStorage для сохранения токена
         console.log('Токен сохранен в localStorage');
         console.log(data.token);
+        const userID = getUserIDFromToken();
+        console.log(userID);
+
         // Переадресация на страницу профиля
-        window.location.href =  `/Profile/${userId}`;
+        window.location.href =  `/Profile/${userID}`;
     })
     .catch((error) => {
         console.error('Error:', error);

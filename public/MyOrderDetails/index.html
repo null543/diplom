@@ -55,12 +55,17 @@
 
     <div class="seller-review">
         <h3>Отзыв для продавца</h3>
-        <textarea placeholder="Ваш отзыв"></textarea>
-        <div class="rating">
-            <!-- Используйте библиотеку для звездного рейтинга или свой метод -->
+        <div class="rating" id="rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
         </div>
-        <button class="publish-button">Опубликовать</button>
+        <textarea id="reviewText" placeholder="Ваш отзыв"></textarea>
+        <button id="btnPublish" class="publish-button">Опубликовать</button>
     </div>
+    
 </div>
 
 <script src="detail-view.js"></script>

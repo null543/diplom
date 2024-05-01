@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои продажи</title>
+    <link href="/MySales/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!-- Ссылки на CSS файлы, библиотеки и прочее -->
+</head>
+<body class="text-white">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    <script type="module" src="/MySales/mysales.js"></script>
+
+    <script src="/menu.js"></script>
+
+    <div class="container mx-auto px-4 py-6">
+        <h1 class="text-3xl font-bold mb-4">Мои продажи</h1>
+        <div class="filters mb-4">
+            <!-- Фильтры для таблицы -->
+            <input type="text" id="order-number-filter" placeholder="Номер заказа">
+            <input type="text" id="seller-filter" placeholder="Продавец">
+            <!-- Другие фильтры -->
+        </div>
+        <table class="w-full text-left">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Заказ</th>
+                    <th>Описание</th>
+                    <th>Покупатель</th>
+                    <th>Статус</th>
+                    <th>Игра</th>
+                    <th>Сумма</th>
+                </tr>
+            </thead>
+            <tbody id="orders-container">
+                <!-- Сюда будут динамически добавляться строки с заказами -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Скрипты для динамической загрузки заказов и фильтрации
+    </script>
+</body>
+</html>

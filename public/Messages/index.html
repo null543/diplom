@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/Messages/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+
+    <script src="/menu.js"></script>
+    <div id="chat-container">
+        <div id="dialog-list">
+            <!-- Здесь будут отображаться диалоги -->
+        </div>
+        <div id="message-panel">
+            <div id="messages">
+                <!-- Здесь будут отображаться сообщения -->
+            </div>
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Введите сообщение..." />
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script type="module" src="/Messages/app.js"></script>
+</body>
+</html>
